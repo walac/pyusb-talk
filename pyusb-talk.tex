@@ -50,6 +50,7 @@
 \begin{document}
 
 \begin{frame}
+  \transdissolve
   \titlepage
   \begin{center}
     \begin{tabular}{c}
@@ -62,6 +63,7 @@
 \end{frame}
 
 \begin{frame}{USB Introduction}
+  \transdissolve
   \begin{center}
     \includegraphics[scale=0.15]{img/topology.jpg}
   \end{center}
@@ -77,12 +79,14 @@
 \end{frame}
 
 \begin{frame}{USB Descriptors}
+  \transdissolve
   \begin{center}
     \includegraphics[scale=0.3]{img/descriptors.jpg}
   \end{center}
 \end{frame}
 
 \begin{frame}{Device Descriptor}
+  \transdissolve
   Contains basic information about the device.
   \begin{table}
     \tiny
@@ -108,6 +112,7 @@
 \end{frame}
 
 \begin{frame}{Configuration Descriptor}
+  \transdissolve
   Dictates how a device will work.
   \begin{table}
     \tiny
@@ -127,6 +132,7 @@
 \end{frame}
 
 \begin{frame}{Interface Descriptor}
+  \transdissolve
   Each interface descriptor represents one logic device.
   A interface can be one or more alternate settings.
   \begin{table}
@@ -148,6 +154,7 @@
 \end{frame}
 
 \begin{frame}{Endpoint Descriptor}
+  \transdissolve
   An endpoint represents a pipe on the device side to receive data.
   Endpoints, except by Endpoint 0, are unidirectional, and specify
   the data direction from Host point of view.
@@ -167,6 +174,7 @@
 \end{frame}
 
 \begin{frame}{USB Transfers}
+  \transdissolve
   \begin{minipage}{.45\linewidth}
     \includegraphics[scale=0.25]{img/usb_transfer.jpg}
   \end{minipage}
@@ -177,6 +185,7 @@
 \end{frame}
 
 \begin{frame}{Transfer Types}
+  \transdissolve
   \begin{center}
     \includegraphics[scale=0.35]{img/transfer_types.jpg}
   \end{center}
@@ -198,6 +207,7 @@
 \end{frame}
 
 \begin{frame}{Accessing USB devices}
+  \transdissolve
   \pause
   Possible solutions:
   \begin{enumerate}
@@ -226,6 +236,7 @@
 \end{frame}
 
 \begin{frame}{PyUSB}
+  \transdissolve
   \begin{itemize}
     \item Up to version 0.4, PyUSB was thin wrapper for libusb 0.1
     \item Starting at version 1.0, PyUSB was redesigned to be a
@@ -239,6 +250,7 @@
 \end{frame}
 
 \begin{frame}[fragile]{Demo: Getting the device serial number}
+  \transdissolve<1>
   \tiny
   \pause
   First, the C version using libusb:
@@ -317,6 +329,7 @@
 \end{frame}
 
 \begin{frame}[fragile]{Demo: Writing data to an endpoint}
+  \transdissolve<1>
   \tiny
   \pause
   C version:
