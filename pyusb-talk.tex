@@ -276,15 +276,22 @@
 \end{frame}
 
 \begin{frame}[fragile]{Demo: Getting the device serial number}
-  \tiny
-  \pause
-  Now the Python version:
-  \pause
-  \begin{lstlisting}[language=Python]
-   from usb.core import find
-   dev = find(idVendor=0x4d8, idProduct=0xfa2e)
-   print(dev.serial_number)
-  \end{lstlisting}
+  \begin{minipage}{.55\linewidth}
+    \tiny
+    \pause
+    Now the Python version:
+    \pause
+    \begin{lstlisting}[language=Python]
+     from usb.core import find
+     dev = find(idVendor=0x4d8, idProduct=0xfa2e)
+     print(dev.serial_number)
+    \end{lstlisting}
+  \end{minipage}
+  \hspace{.05\linewidth}
+  \begin{minipage}{.35\linewidth}
+    \pause
+    \includegraphics[scale=0.15]{img/witchcraft.jpg}
+  \end{minipage}
 
   \begin{itemize}
     \tiny
@@ -396,8 +403,7 @@
 
 \begin{frame}{Thank you!}
   \begin{center}
-    \Huge
-    Questions?
+    \includegraphics[scale=0.2]{img/questions.jpg}
   \end{center}
 
   \begin{center}
