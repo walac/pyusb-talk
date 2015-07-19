@@ -446,7 +446,6 @@
 
       /* initialized the library */
       libusb_init(NULL);
-      atexit(onexit);
 
       /* open the device */
       handle = libusb_open_device_with_vid_pid(NULL, 0x4d8, 0xfa2e);
